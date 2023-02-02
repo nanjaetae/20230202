@@ -3,7 +3,7 @@ data = input('숫자로 이루어진 문자열을 입력하세요. ')
 result = 0
 for i in range(len(data)):
     n = int(data[i])
-    if result == 0:
+    if result == 0 or result == 1: #이걸 놓쳤네
         result += n
     elif n == 0 or n == 1:
         result += n
